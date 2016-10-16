@@ -1,0 +1,113 @@
+<html>
+<head>
+	<title>Animaciones</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="text_animate.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="active contenedor">
+
+		<div class="item fill-blue">
+			<p class="texto">Héctor BlisS</p>
+			<p class="texto2">Brendi Puffu</p>
+			<p class="texto3">Hécotr Zavala</p>
+		</div>
+
+		<div class="item2 fill-green">
+			<p class="texto">perro</p>
+			<p class="texto2">pura Puffu</p>
+			<p class="texto3">david </p>
+		</div>
+
+<!-- 		<div class="item3 contenedor active fill-yellow">
+			<p class="texto">Héctor BlisS</p>
+			<p class="texto2">Brendi Puffu</p>
+			<p class="texto3">Hécotr Zavala</p>
+		</div> -->
+
+
+	</section>
+
+	<section>
+		<div class="contenedor active">
+			<button style="margin:100px;padding:50px" id="elboton">Completado</button>
+		</div>
+	</section>
+
+
+
+	<div class="modal">
+<div id="fireworks">
+
+			<button class="success">
+				<span>
+					<i class="fa fa-check-square-o" aria-hidden="true">
+					</i>
+					¡Bien hecho!
+				</span>
+			</button>
+
+
+
+
+
+<img class="party one" style="width:50px;" src="https://cdn2.iconfinder.com/data/icons/bullet-points/64/Bulletpoint_Bullet_Listicon_Shape_Bulletfont_Glyph_Typography_Bullet_Point_Customshape_Wingding_Custom_Star-512.png">
+<img class="party two" style="width:50px;" src="https://cdn2.iconfinder.com/data/icons/bullet-points/64/Bulletpoint_Bullet_Listicon_Shape_Bulletfont_Glyph_Typography_Bullet_Point_Customshape_Wingding_Custom_Star-512.png">
+<img class="party tres" style="width:50px;" src="https://cdn2.iconfinder.com/data/icons/bullet-points/64/Bulletpoint_Bullet_Listicon_Shape_Bulletfont_Glyph_Typography_Bullet_Point_Customshape_Wingding_Custom_Star-512.png">
+<img class="party four" style="width:50px;" src="https://cdn2.iconfinder.com/data/icons/bullet-points/64/Bulletpoint_Bullet_Listicon_Shape_Bulletfont_Glyph_Typography_Bullet_Point_Customshape_Wingding_Custom_Star-512.png">
+<img class="party five" style="width:50px;" src="https://cdn2.iconfinder.com/data/icons/bullet-points/64/Bulletpoint_Bullet_Listicon_Shape_Bulletfont_Glyph_Typography_Bullet_Point_Customshape_Wingding_Custom_Star-512.png">
+
+</div>
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+
+<script>
+(function(){
+
+	$('#elboton').on('click',isActive);
+
+	function isActive(){
+		console.log('puchado');
+
+		var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+		$('.modal').addClass('isActive').one(animationEnd,function(){
+			$('.modal').removeClass('isActive');
+		})
+
+
+
+
+	}
+
+
+
+})();
+
+
+
+
+</script>
+</body>
+</html>
